@@ -1,0 +1,178 @@
+/*
+Theme Name: Tattoo Artist
+Theme URI: https://www.buywpthemes.net/products/free-tattoo-wordpress-theme
+Author: Peccular
+Author URI: https://www.buywpthemes.net/
+Description: Are you a talented tattoo artist looking for the perfect online platform to showcase your artwork and attract new clients? Look no further! Introducing the Tattoo Artist WordPress Theme, a visually stunning and feature-rich theme specifically designed for tattoo artists, studios, and parlors. With its sleek design, powerful customization options, and user-friendly interface, this theme is the ultimate tool to establish your online presence and take your tattoo business to the next level. The Tattoo Artist WordPress Theme is built to impress. With its modern and edgy design, your website will reflect the unique style and creativity that sets you apart as a tattoo artist. Every element of the theme is carefully crafted to ensure that your artwork takes center stage and leaves a lasting impression on your visitors. Don't wait any longer to showcase your tattoo artistry to the world. Get the Tattoo Artist WordPress Theme today and unleash your creative ink like never before. Establish your online presence, attract new clients, and take your tattoo business to new heights. Let your art speak for itself! Demo - https://www.wpthemesdemo.com/tattoo-artist/
+Version: 0.1.2
+Tested up to: 5.8
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: tattoo-artist
+Slug: tattoo-artist
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, grid-layout, portfolio, photography
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 31vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+}
+.m-rl{margin-right: 0;
+margin-left: 0}
+.footer-area {
+    background: #F6F6E3;
+    position: relative;
+    display: block;
+    overflow: initial;
+    z-index: 1;
+    padding:2em 0 0em 0;
+    background-repeat: no-repeat;
+}
+
+.hero-slider {
+    background: url(assets/images/sliderbgimg.png);}
+.hero-slider .sliderimg{
+    padding: 29px 0px 0px 57px;
+    background: #E7DB13;
+    margin: 0;
+    width: 920px;
+    height: 700px;
+    right: 108px;
+    top: 0px;
+    z-index: 0;
+    position: relative;
+    -webkit-mask-image: url(assets/images/sliderbgimg123.png);
+    mask-image: url(assets/images/sliderbgimg123.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+}
+.hero-slider .sliderimg img{
+    -webkit-mask-image: url(assets/images/sliderbgimg123.png);
+    mask-image: url(assets/images/sliderbgimg123.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    width: 920px;
+    height: 640px;
+}
+
+.blogbx .box-admin {
+    background: #E7DB13;
+    -webkit-mask-image: url(assets/images/formfeildshape.png);
+    mask-image: url(assets/images/formfeildshape.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    /* width: 400px; */
+    left: 0px;
+    /* height: 56px; */
+    position: absolute;
+    bottom: -28px;
+    padding: 2px;
+    right: -1px;
+    margin: 0 auto;
+}
+.blogbx .comment-timing{
+    background: #F9F9F1;
+    -webkit-mask-image: url(assets/images/formfeildshape.png);
+    mask-image: url(assets/images/formfeildshape.png);
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+/*    width: 498px;
+    height: 53px;
+    padding: 17px 32px 17px 30px;*/
+}
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+}
+.recentcomments a {
+    display: inline-block !important;
+    padding-left: 18px !important;
+    margin: 0 !important;
+}
+
+.slider-img-overlay {
+    position: absolute;
+    left: 0;
+    right: 52.5%;
+    top: 0;
+    bottom: 0;
+    background: #161415;
+    opacity: 1;
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+}
+.slider-img-overlay-outer {
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    clip-path: polygon(0 0, 68% 0, 100% 100%, 0% 100%);
+}
+@media (max-width: 991px) {
+.slider-img-overlay-outer {
+    right: 35%;
+}
+.slider-img-overlay {
+    right: 38.5%;
+}
+
+}
